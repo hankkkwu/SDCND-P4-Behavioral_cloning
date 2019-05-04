@@ -12,8 +12,8 @@ with open('../../../opt/challenge_data/driving_log1.csv') as csvfile:
 # split data into training set and validation set
 from sklearn.model_selection import train_test_split
 train_data, valid_data = train_test_split(lines, test_size=0.2)
-print(len(train_data))#  = 23400
-print(len(valid_data))#  = 5850
+#print(len(train_data))#  = 23400
+#print(len(valid_data))#  = 5850
 
 from sklearn.utils import shuffle
 def generator(lines, batch_size=32):
