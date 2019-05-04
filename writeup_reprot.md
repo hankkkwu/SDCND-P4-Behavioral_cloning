@@ -102,7 +102,11 @@ To capture good driving behavior, I first recorded two laps on track one(counter
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to steer back to the center. These images show what a recovery looks like starting from right side of road back to center:
 
 ![alt text](./examples/right.jpg)
+
+
 ![alt text](./examples/right2.jpg)
+
+
 ![alt text](./examples/right3.jpg)
 
 Then I repeated this process, recorded track one and track two driving clockwise in order to get more data points.
@@ -110,11 +114,15 @@ Then I repeated this process, recorded track one and track two driving clockwise
 To augment the data set, I flipped images and angles thinking that this would make my model not just learning to steer to left, also learning to steer to right, and my data will be more comprehensive. For example, here is an image that has then been flipped:
 
 ![alt text](./examples/original.jpg)
+
+
 ![alt text](./examples/flipped_image.jpg)
 
 I also used the left and right camera images to get more data and thinking that this would also help teaching model how to steer back to the center if the vehicle drifting off to the side. Here are two images from left and right camera:
 
 ![alt text](./examples/left_camera.jpg)
+
+
 ![alt text](./examples/right_camera.jpg)
 
 After the collection process, I had 175500 number of data points. I then preprocessed this data by normalizing and cropping the upper and lower part of image to reduce noise.
