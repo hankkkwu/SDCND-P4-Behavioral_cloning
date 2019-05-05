@@ -16,11 +16,13 @@ To meet specifications, the project will require submitting five files:
 
 The Project
 ---
-The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior 
-* Design, train and validate a model that predicts a steering angle from image data
-* Use the model to drive the vehicle autonomously around the first track in the simulator. The vehicle should remain on the road for an entire loop around the track.
-* Summarize the results with a written report
+My project includes the following files:
+* [model.py](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/model.py) containing the script to create and train the model
+* [drive.py](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/drive.py) for driving the car in autonomous mode
+* [model.h5](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/model.h5) containing a trained convolution neural network 
+* [writeup_report.md](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/writeup_reprot.md) summarizing the results
+* [video.mp4](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/video.mp4) recording vehicle driving autonomously around the track one.
+* [track2.mp4](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/track2.mp4) recording vehicle driving autonomously around the track two.
 
 ### Dependencies
 This lab requires:
