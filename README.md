@@ -16,13 +16,22 @@ To meet specifications, the project will require submitting five files:
 
 The Project
 ---
+
+Here is the video recording of my vehicle driving autonomously around the track1:
+
+[![result video1](http://img.youtube.com/vi/A1T66GqZxDE/0.jpg)](https://www.youtube.com/watch?v=A1T66GqZxDE "Behavioral Cloning in track1")
+
+
+Here is the video recording of my vehicle driving autonomously around the track2:
+
+[![result video2](http://img.youtube.com/vi/ZsJDDCPXNoo/0.jpg)](https://www.youtube.com/watch?v=ZsJDDCPXNoo "Behavioral Cloning in track2")
+
+
 My project includes the following files:
 * [model.py](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/model.py) containing the script to create and train the model
 * [drive.py](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/drive.py) for driving the car in autonomous mode
 * [model.h5](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/model.h5) containing a trained convolution neural network 
 * [writeup_report.md](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/writeup_reprot.md) summarizing the results
-* [video.mp4](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/video.mp4) recording vehicle driving autonomously around the track one.
-* [track2.mp4](https://github.com/hankkkwu/SDCND-P4-Behavioral_cloning/blob/master/track2.mp4) recording vehicle driving autonomously around the track two.
 
 ### Dependencies
 This lab requires:
