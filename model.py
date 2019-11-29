@@ -4,11 +4,11 @@ import numpy as np
 import cv2
 # Open the csv file
 lines = []
-with open('../../../opt/challenge_data/driving_log1.csv') as csvfile:
+with open('../data/behavior_cloning/total_data/driving_log1.csv') as csvfile:
     reader = csv.reader(csvfile)
     for line in reader:
         lines.append(line)
-   
+
 # split data into training set and validation set
 from sklearn.model_selection import train_test_split
 train_data, valid_data = train_test_split(lines, test_size=0.2)
@@ -30,7 +30,7 @@ def generator(lines, batch_size=32):
                 for camera in range(3):
                     source_path = line[camera]
                     file_name = source_path.split('/')[-1]
-                    current_path = '../../../opt/challenge_data/IMG/' + file_name
+                    current_path = '../data/behavior_cloning/total_data/IMG/' + file_name
                     image = mpimg.imread(current_path)
                     images.append(image)
                     if camera == 0:
@@ -71,7 +71,7 @@ model.add(Dense(50))
 model.add(Dense(1))
 
 model.compile(loss='mse', optimizer='Adam')
-# model.summary()
+model.summary()
 model.fit_generator(train_generator, steps_per_epoch=math.ceil(len(train_data) / batch_size),
                    epochs=5, verbose=1, validation_data=valid_generator,
                    validation_steps = math.ceil(len(valid_data) / batch_size))
